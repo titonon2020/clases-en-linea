@@ -64,14 +64,13 @@
 // ......................................................
 // .......................UI Code........................
 // ......................................................
-<button id="open-room">jola</button>
 document.getElementById('open-room').onclick = function() {
     disableInputButtons();
     connection.open(document.getElementById('room-id').value, function() {
         showRoomURL(connection.sessionid);
     });
 };
-
+<button id="open-room">jola</button>
 document.getElementById('join-room').onclick = function() {
     disableInputButtons();
     connection.join(document.getElementById('room-id').value);
